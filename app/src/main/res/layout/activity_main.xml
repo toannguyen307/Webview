@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            app:srcCompat="@drawable/iconback"
+
+            />
+        <ImageView
+            android:id="@+id/img_foward"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            app:srcCompat="@drawable/iconforward"
+
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/iconreload"
+            android:layout_toRightOf="@+id/img_back"
+            android:background="@null"
+            android:id="@+id/img_reload"
+            />
+
+
+        <EditText
+            android:id="@+id/urlfield"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:hint="URL"
+            android:lines="1" />
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO" />
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:id="@+id/web_View"/>
+
+</LinearLayout>
