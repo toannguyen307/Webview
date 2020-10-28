@@ -87,9 +87,4 @@ public class MainActivity extends AppCompatActivity {
 
         urlText.setText(urlText.getText().toString());
     }
-
-
-
-
-
 }
